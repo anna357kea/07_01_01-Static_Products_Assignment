@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "Calibri Light";
+    src: url("../fonts/Calibri\ Light.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Regular";
+    src: url("../fonts/Calibri\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Bold";
+    src: url("../fonts/Calibri\ Bold.TTF");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*    outline: 1px dashed green;*/
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+#global-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faeee8;
+    height: 70px;
+}
+
+#global-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-right: auto; */
+    width: auto;
+}
+
+li {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    width: 16%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: none;
+}
+
+#invisible-item {
+    /* margin-left: auto; */
+}
+
+main {
+    display: grid;
+}
+
+#category-title {
+    grid-column: 1 / -1;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    height: 1rem;
+
+    font-family: "Calibri Regular", Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 290px));
+    gap: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+h3 {
+    font-family: "Calibri Light", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-family: "Calibri Light", Arial, sans-serif;
+    color: black;
+    opacity: 0.7;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+article {
+    margin-bottom: 2.5rem;
+}
+
+.prev-price {
+    text-decoration: line-through;
+    font-family: "Calibri Regular", Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.discounted {
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #d55e3a;
+    margin-left: auto;
+}
+
+.discount {
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    text-align: right;
+    margin-left: 1rem;
+}
+
+.price {
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.button1-container {
+    position: relative;
+    width: auto;
+    height: 40px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: black solid 1.5px;
+}
+
+.button1-container:hover {
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.button1-text {
+    position: absolute;
+    font-family: "Calibri Bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    top: 9px;
+    left: 25%;
+}
+
+.img_sold_out {
+    opacity: 0.6;
+}
+
+.sold_out-ticket {
+    color: black;
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    text-align: right;
+    margin-left: 1rem;
+}
