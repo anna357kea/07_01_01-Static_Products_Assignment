@@ -34,16 +34,29 @@ html {
     font-size: 16px;
 }
 
-#global-nav {
+/* #global-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #faeee8;
     height: 70px;
+} */
+
+#global-nav {
+    grid-area: global_nav;
+    display: grid;
+    grid-template-areas: "menu logo .";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px auto;
+    grid-column-gap: 16px;
+    align-items: center;
+    background-color: #faeee8;
+    height: 70px;
 }
 
 #global-menu-list {
+    grid-area: menu;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -57,7 +70,7 @@ ul {
 
 li {
     font-family: "Lato Bold", Arial, sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     /* padding-left: 2rem; */
     padding-right: 2rem;
     list-style-type: none;
@@ -68,10 +81,16 @@ a {
     color: black;
 }
 
-#logo {
-    width: 16%;
+#logo_container {
+    justify-self: center;
+    /* width: 16%; */
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+#logo2 {
+    grid-area: logo;
+    height: 35px;
     box-shadow: none;
 }
 
@@ -166,8 +185,13 @@ ol {
     margin-bottom: 1.5rem;
     letter-spacing: 0.05rem;
 
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding-right: 1rem;
+}
+
+.breadcrumbs li:hover {
+    color: black;
+    opacity: 1;
 }
 
 .breadcrumbsLine {
@@ -323,6 +347,19 @@ label {
         gap: 0rem;
     }
 
+    #global-nav {
+        grid-area: global_nav;
+        display: grid;
+        grid-template-areas: "logo" "menu";
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr;
+        /* grid-template-rows: auto auto; */
+        grid-column-gap: 16px;
+        align-items: center;
+        background-color: #faeee8;
+        height: 130px;
+    }
+
     article.description {
         /* max-width: 300px; */
         margin-bottom: 10rem;
@@ -340,9 +377,6 @@ label {
         /* padding: 0; */
         margin: 0;
         margin-top: 25px;
-    }
-    .nomobile {
-        display: none;
     }
 
     .breadcrumbs li {
