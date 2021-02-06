@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Calibri Light";
+    src: url("../fonts/Calibri\ Light.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Regular";
+    src: url("../fonts/Calibri\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Bold";
+    src: url("../fonts/Calibri\ Bold.TTF");
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*    outline: 1px dashed green;*/
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+#global-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faeee8;
+    height: 70px;
+}
+
+#global-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-right: auto; */
+    width: auto;
+}
+
+ul {
+    margin-left: 3rem;
+}
+
+li {
+    font-family: "Lato Bold", Arial, sans-serif;
+    font-size: 1.1rem;
+    /* padding-left: 2rem; */
+    padding-right: 2rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    width: 16%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: none;
+}
+
+#invisible-item {
+    /* margin-left: auto; */
+}
+
+/* #category-title {
+    grid-column: 1 / -1;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    height: 1rem;
+
+    font-family: "Calibri Regular", Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+} */
+
+main {
+    display: grid;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    /* gap: 2.5rem; */
+    gap: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    /* border-bottom: 2px orange solid; */
+}
+
+h3 {
+    font-family: "Calibri Light", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-family: "Calibri Light", Arial, sans-serif;
+    color: black;
+    opacity: 0.7;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+ol {
+    /* list-style-type: none; */
+    display: flex;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.breadcrumbs li {
+    font-family: "Calibri Light", Arial, sans-serif;
+    color: black;
+    opacity: 0.7;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05rem;
+
+    text-decoration: underline;
+    padding-right: 1rem;
+}
+
+.breadcrumbsLine {
+    text-decoration: none;
+}
+
+article {
+    margin-bottom: 2.5rem;
+}
+
+.prev-price {
+    text-decoration: line-through;
+    font-family: "Calibri Regular", Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.discounted {
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    color: #d55e3a;
+    margin-left: auto;
+}
+
+/* .discount {
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    text-align: right;
+    margin-left: 2rem;
+} */
+
+.discount {
+    font-family: "Lato Regular", Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: right;
+    /* margin-left: 1rem; */
+
+    color: white;
+    background-color: #d55e3a;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.2rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+
+.price {
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    color: black;
+}
+
+.button1-container {
+    position: relative;
+    width: auto;
+    height: 40px;
+    margin-left: 0rem;
+    margin-right: 14rem;
+    margin-top: 2rem;
+    /* margin-bottom: 1.5rem; */
+    border: black solid 1.5px;
+}
+
+.button1-container:hover,
+.button1-container:active {
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.button1-text {
+    position: absolute;
+    font-family: "Calibri Bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    top: 9px;
+    left: 32%;
+}
+
+.img_sold_out {
+    opacity: 0.6;
+}
+
+.sold_out-ticket {
+    font-family: "Lato Regular", Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    color: white;
+    text-align: right;
+    /* margin-left: 1rem; */
+    background-color: #302c2c;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.2rem;
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.2rem;
+}
+
+select .size {
+    min-width: 550px;
+}

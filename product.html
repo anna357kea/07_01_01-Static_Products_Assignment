@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products page</title>
+
+  <meta name="description" content="Products page"> <!-- Different one for every page! */ -->
+  <meta name="robots" content="index, follow"> <!-- or meta name="robots" content="noindex, nofollow" -->
+
+  <link rel="icon" type="image/svg" href="images/logo-Tivy-square.jpg">
+  <!--  this is so the error faviicon would not appear-->
+  <title>Products page</title>
+
+  <link href="./css/product.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="body-grid">
+  <nav id="global-nav">
+
+    <ul id="global-menu-list">
+      <li>
+        <a href="portfolio.html">Categories</a>
+      </li>
+      <li>
+        <a href="portfolio.html">Categories</a>
+      </li>
+      <!-- <li><a href="about_me.html">About me</a></li> -->
+    </ul>
+
+
+    <a href="index.html">
+      <img src="./images/logo-Tivy.svg" alt="Logo" id="logo">
+    </a>
+
+    <div id="invisible-item">
+    </div>
+
+  </nav>
+
+
+  <!-- <h4 id="breadcrumbs">Home | Brands | Nike | Name of the product (/ Woman / Category /Company / Product name)</h4> -->
+
+  <ol class="breadcrumbs">
+    <li><a href="index.html">Home</a></li>
+    <li><span class="breadcrumbsLine">/</span></li>
+    <li><a href="category.html">Brands</a></li>
+    <li><span class="breadcrumbsLine">/</span></li>
+    <li class="brand"><a href="productlist.html"></a></li>
+    <li><span class="breadcrumbsLine">/</span></li>
+    <li class="productname">Name of the product</li>
+  </ol>
+
+
+  <main id="product-list">
+
+    <article class="bigProduct">
+      <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+        alt="Sahara Team India Fanwear Round Neck Jersey" class="productImage"/>
+    </article>
+
+
+
+    <article class="description">
+      <h5>Inventory number <span class="inventoryNumber">XXX</span></h5>
+      <h4><span class="category">Category</span><span> | </span><span class="company">Company</span></h4>
+      <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+      <p class="prev-price">DKK 1595</p>
+
+      <p><span class="discounted">DKK 1560</span>
+        <span class="discount">-34%</span>
+      </p>
+
+
+      <form>
+        <label
+          >Choose a size
+          <select name="size">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </label>
+        <a href="product.html">
+          <div class="button1-container">
+            <div class="button1-text">Add to basket</div>
+          </div>
+        </a>
+        <!-- <button>Add to basket</button> -->
+      </form>
+
+
+      
+    </article>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+  <!-- <footer>
+    </footer> -->
+  <script src="./js/product.js"></script>
+</body>
+
+</html>

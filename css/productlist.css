@@ -13,6 +13,16 @@
     src: url("../fonts/Calibri\ Bold.TTF");
 }
 
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,9 +51,16 @@ html {
     width: auto;
 }
 
+ul {
+    margin-left: 3rem;
+}
+
 li {
-    padding-left: 2rem;
+    font-family: "Lato Bold", Arial, sans-serif;
+    font-size: 1.1rem;
+    /* padding-left: 2rem; */
     padding-right: 2rem;
+    list-style-type: none;
 }
 
 a {
@@ -92,13 +109,14 @@ img {
     max-width: 100%;
     height: auto;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    /* border-bottom: 2px orange solid; */
 }
 
 h3 {
     font-family: "Calibri Light", Arial, sans-serif;
     font-size: 1.3rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 h4 {
@@ -128,18 +146,36 @@ article {
     font-size: 1.3rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    margin-right: 1rem;
     color: #d55e3a;
     margin-left: auto;
 }
 
-.discount {
+/* .discount {
     font-family: "Calibri Bold", Arial, sans-serif;
     font-size: 1.3rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     color: black;
     text-align: right;
-    margin-left: 1rem;
+    margin-left: 2rem;
+} */
+
+.discount {
+    font-family: "Lato Regular", Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    text-align: right;
+    /* margin-left: 1rem; */
+
+    color: white;
+    background-color: #d55e3a;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.2rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.2rem;
 }
 
 .price {
@@ -147,6 +183,7 @@ article {
     font-size: 1.3rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    margin-right: 1rem;
     color: black;
 }
 
@@ -156,12 +193,13 @@ article {
     height: 40px;
     margin-left: 4rem;
     margin-right: 4rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    /* margin-bottom: 1.5rem; */
     border: black solid 1.5px;
 }
 
-.button1-container:hover {
+.button1-container:hover,
+.button1-container:active {
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
 }
 
@@ -179,12 +217,17 @@ article {
 }
 
 .sold_out-ticket {
-    color: black;
-    font-family: "Calibri Bold", Arial, sans-serif;
-    font-size: 1.3rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: black;
+    font-family: "Lato Regular", Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    color: white;
     text-align: right;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    background-color: #302c2c;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.2rem;
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.2rem;
 }
