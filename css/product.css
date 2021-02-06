@@ -256,6 +256,23 @@ article {
     color: black;
 }
 
+.sold_out-ticket {
+    font-family: "Lato Regular", Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    color: white;
+    text-align: right;
+    /* margin-left: 1rem; */
+    background-color: #302c2c;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.2rem;
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.2rem;
+    margin-left: 0;
+}
+
 form {
     margin-top: 2rem;
 }
@@ -391,13 +408,24 @@ label {
 
     .button1-container {
         position: relative;
-        /* width: auto; */
-        width: 100%;
+        width: 230px;
         height: 40px;
-        margin-left: 0rem;
-        /* margin-right: 28rem; */
+        margin-left: 0;
+        margin-right: 4rem;
         margin-top: 2rem;
         /* margin-bottom: 1.5rem; */
         border: black solid 1.5px;
+    }
+
+    .button1-text {
+        left: 20%;
+    }
+
+    .sold_out-ticket {
+        display: block;
+        width: 100px;
+        text-align: left;
+        padding-left: 1.2rem;
+        margin-left: 6.4rem;
     }
 }

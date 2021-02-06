@@ -14,6 +14,7 @@
     grid-area: menu;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     /* margin-right: auto; */
     width: auto;
@@ -42,6 +43,7 @@ li {
     grid-area: logo;
     height: 35px;
     box-shadow: none;
+    margin-bottom: 0rem;
 }
 
 @media (max-width: 800px) {
@@ -56,5 +58,20 @@ li {
         align-items: center;
         background-color: #faeee8;
         height: 130px;
+    }
+
+    #global-menu-list {
+        flex-wrap: wrap;
+    }
+
+    .button1-container {
+        position: relative;
+        width: 170px;
+        height: 40px;
+        margin-left: 0;
+        margin-right: 4rem;
+        margin-top: 2rem;
+        /* margin-bottom: 1.5rem; */
+        border: black solid 1.5px;
     }
 }
