@@ -98,11 +98,18 @@ main {
 
 #product-list {
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    /* grid-template-columns: 0.2fr 0.8fr 1fr 0.25fr; */
+    /* grid-template-columns: 0.2fr 0.8fr 1fr 0.25fr; */
+    /* grid-template-columns: 1fr 1fr 0.5fr 0.5fr; */
+    grid-template-columns: 33% 33% 33%;
     /* gap: 2.5rem; */
     gap: 5rem;
     margin-left: 3rem;
     margin-right: 3rem;
+}
+
+.bigProduct {
+    /* grid-column-start: 2; */
 }
 
 img {
@@ -117,7 +124,7 @@ h3 {
     font-family: "Calibri Light", Arial, sans-serif;
     font-size: 1.3rem;
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 h4 {
@@ -127,6 +134,16 @@ h4 {
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+h5 {
+    font-family: "Calibri Light", Arial, sans-serif;
+    color: black;
+    /* opacity: 0.7; */
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
     letter-spacing: 0.05rem;
 }
 
@@ -215,12 +232,25 @@ article {
     color: black;
 }
 
+form {
+    margin-top: 2rem;
+}
+
+select {
+    height: 40px;
+    width: 75px;
+    -webkit-border-radius: 0;
+    border: black solid 1.5px;
+    margin-left: 2rem;
+}
+
 .button1-container {
     position: relative;
-    width: auto;
+    /* width: auto; */
+    width: 300px;
     height: 40px;
     margin-left: 0rem;
-    margin-right: 14rem;
+    /* margin-right: 28rem; */
     margin-top: 2rem;
     /* margin-bottom: 1.5rem; */
     border: black solid 1.5px;
@@ -260,6 +290,63 @@ article {
     padding-bottom: 0.2rem;
 }
 
-select .size {
-    min-width: 550px;
+select {
+    /* min-width: 550px; */
+    margin-left: 2rem;
+    size: 0.2rem;
+}
+
+label {
+    font-family: "Calibri Light", Arial, sans-serif;
+    color: black;
+    /* opacity: 0.7; */
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    /* letter-spacing: 0.05rem; */
+}
+
+@media (max-width: 1200px) {
+    #product-list {
+        grid-template-columns: 50% 50%;
+        gap: 4rem;
+    }
+
+    article.description {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    #product-list {
+        grid-template-columns: 100%;
+        gap: 0rem;
+    }
+
+    article.description {
+        /* max-width: 300px; */
+        margin-bottom: 10rem;
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .nomobile {
+        display: none;
+    }
+
+    .breadcrumbs li {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .bigProduct {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
 }
