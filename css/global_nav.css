@@ -112,6 +112,8 @@ li {
 
     #global-menu-list {
         flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
     }
 
     .button1-container {
@@ -127,5 +129,8 @@ li {
 
     ul {
         margin-left: 0;
+    }
+    li {
+        padding-right: 0;
     }
 }

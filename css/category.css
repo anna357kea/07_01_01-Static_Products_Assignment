@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Calibri Light";
+    src: url("../fonts/Calibri\ Light.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Regular";
+    src: url("../fonts/Calibri\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Bold";
+    src: url("../fonts/Calibri\ Bold.TTF");
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*    outline: 1px dashed green;*/
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* h1 {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    height: 1rem;
+    font-family: "Calibri Regular", Arial, sans-serif;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    }
+} */
+
+h2 {
+    font-family: "Calibri Bold", Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #d55e3a;
+    opacity: 0.8;
+}
+
+/*Category*/
+
+/* ol.fromAtoZ {
+    text-decoration: underline;
+    color: black;
+    opacity: 0.7;
+}
+ol.fromAtoZ li a:hover {
+    text-decoration: underline;
+    color: black;
+    opacity: 1;
+} */
+
+.fromAtoZ li {
+    padding-right: 0;
+}
+
+.fromAtoZ li > a {
+    border: #8b8b8b solid 1.5px;
+    /* border: #d55e3a solid 1.5px; */
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    color: black;
+}
+
+.fromAtoZ li > a:hover {
+    border: #d55e3a solid 1.5px;
+    background-color: #d55e3a;
+    color: white;
+    opacity: 1;
+}
+.letterLinks ol {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 2rem;
+    font-size: 1.4rem;
+}
+.brandList ol {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+}
+.brandList li {
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    width: 20rem;
+}
+.brandList li:hover {
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(240, 240, 240);
+}
+.brandList a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+main {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+footer {
+    margin-top: 7rem;
+}
