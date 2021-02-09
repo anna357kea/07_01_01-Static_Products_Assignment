@@ -347,6 +347,14 @@ label {
     /* letter-spacing: 0.05rem; */
 }
 
+article.description {
+    /* max-width: 300px; */
+
+    display: flex;
+    align-items: center;
+    height: 450px;
+}
+
 @media (max-width: 1200px) {
     #product-list {
         grid-template-columns: 50% 50%;
@@ -379,8 +387,13 @@ label {
 
     article.description {
         /* max-width: 300px; */
+        width: auto;
         margin-bottom: 10rem;
         margin-left: 1rem;
+        display: flex;
+        justify-self: center;
+        align-items: flex-start;
+        height: auto;
     }
 
     ol {
