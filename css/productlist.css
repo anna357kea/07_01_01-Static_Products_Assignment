@@ -128,7 +128,7 @@ article {
 
 .discount {
     font-family: "Lato Regular", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     text-align: right;
@@ -183,7 +183,7 @@ article {
 
 .sold_out-ticket {
     font-family: "Lato Regular", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     color: white;

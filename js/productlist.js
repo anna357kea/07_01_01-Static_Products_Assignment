@@ -38,8 +38,11 @@ function showProduct(product) {
     if (product.discount) {
         myCopy.querySelector("p.prev-price").textContent =
             "DKK " + product.price;
+        let price1 = "100" - product.discount;
+        let priceAfterDiscount = (price1 * product.price) / 100;
+        console.log(price1);
         myCopy.querySelector("span.discounted").textContent =
-            "DKK " + product.relid;
+            "DKK " + priceAfterDiscount;
         myCopy.querySelector("span.discount").textContent =
             product.discount + "%";
     } else {
