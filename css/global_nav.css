@@ -51,7 +51,7 @@ img {
 #global-nav {
     grid-area: global_nav;
     display: grid;
-    grid-template-areas: "menu logo .";
+    grid-template-areas: ". logo menu";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 70px auto;
     grid-column-gap: 16px;
@@ -71,7 +71,7 @@ img {
 }
 
 ul {
-    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 li {
@@ -80,9 +80,11 @@ li {
     /* padding-left: 2rem; */
     padding-right: 2rem;
     list-style-type: none;
+    white-space: nowrap; /* so that the words in li will not wrap and will always be in one line */
 }
 
 #logo_container {
+    grid-area: logo;
     justify-self: center;
     /* width: 16%; */
     margin-top: 5%;
@@ -90,10 +92,24 @@ li {
 }
 
 #logo2 {
-    grid-area: logo;
+    /* grid-area: logo; */
     height: 35px;
     box-shadow: none;
     margin-bottom: 0rem;
+}
+
+@media (max-width: 1060px) {
+    #global-nav {
+        grid-area: global_nav;
+        display: grid;
+        grid-template-areas: "logo . menu";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 70px auto;
+        grid-column-gap: 16px;
+        align-items: center;
+        background-color: #faeee8;
+        height: 70px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -128,7 +144,7 @@ li {
     }
 
     ul {
-        margin-left: 0;
+        margin-right: 0;
     }
     li {
         padding-right: 0;

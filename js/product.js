@@ -1,4 +1,13 @@
-const url = `https://kea-alt-del.dk/t7/api/products/1164`; //example 2801(discount: null, sold out: 0), 1525(discount: 55, sold out:0), 1164(discount: 28, sold out: 1), 1165, 2585, 2485, 2385, 2285, 2185
+const urlParams = new URLSearchParams(window.location.search);
+// in the URL grab id and store it's value in query
+const id = urlParams.get("id");
+console.log(id);
+
+// const id = 1163;
+// const id = product.id;
+const url = `https://kea-alt-del.dk/t7/api/products/` + id;
+// const url = `https://kea-alt-del.dk/t7/api/products/1164`;
+//example 2801(discount: null, sold out: 0), 1525(discount: 55, sold out:0), 1164(discount: 28, sold out: 1), 1165, 2585, 2485, 2385, 2285, 2185
 //fetch the data
 fetch(url)
     .then((response) => response.json())
@@ -13,7 +22,6 @@ function showProduct(product) {
         product.productdisplayname;
 
     //description
-
     document.querySelector("h4 span.category").textContent = product.category;
     document.querySelector("h4 span.brandname").textContent = product.brandname;
     document.querySelector("h3").textContent = product.productdisplayname;
@@ -38,10 +46,11 @@ function showProduct(product) {
 
     //image sold out or not
 
-    document.querySelector(".bigProduct img").src = product.brandimage;
-    // "img.productImage"
-    // ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-    document.querySelector(".bigProduct img").alt = product.productdisplayname;
+    // document.querySelector(".bigProduct img").src = product.brandimage;
+    document.querySelector(
+        "img#productImage"
+    ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+    document.querySelector("img#productImage").alt = product.productdisplayname;
 
     if (product.soldout == 0) {
         document
