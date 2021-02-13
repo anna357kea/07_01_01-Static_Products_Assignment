@@ -1,11 +1,11 @@
-// const urlParams = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(window.location.search);
 // const query = url.Params.get("q");
 // const start = url.Params.get("start");
-// const brand = url.Params.get("brand");
-const url = "https://kea-alt-del.dk/t7/api/products?limit=120";
-// const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + brand;
-
-// const url = "https://kea-alt-del.dk/t7/api/products/";
+const brandname = urlParams.get("brandname");
+console.log(brandname);
+document.querySelector("main>h2").textContent = brandname;
+// const url = "https://kea-alt-del.dk/t7/api/products?limit=120";
+const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + brandname;
 
 fetch(url)
     .then(function (res) {
